@@ -5,12 +5,14 @@ public class UsuarioDto {
 	private String nombre;
 	private String primerApellido;
 	private String segundoApellido;
+	private String id;
 
-	public UsuarioDto(String nombre, String primerApellido, String segundoApellido) {
+	public UsuarioDto(String nombre, String primerApellido, String segundoApellido, String id) {
 		super();
 		this.nombre = nombre;
 		this.primerApellido = primerApellido;
 		this.segundoApellido = segundoApellido;
+		this.id = id;
 	}
 
 	public UsuarioDto() {
@@ -38,6 +40,14 @@ public class UsuarioDto {
 
 	public void setSegundoApellido(String segundoApellido) {
 		this.segundoApellido = segundoApellido;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
 	}
 
 }
